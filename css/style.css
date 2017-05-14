@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/* General styles and reset. */
+    body {
+        margin: 0;
+    }
+    
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Colors. */
+    .brown { color: #74241d; }
+    .black { color: #201b21; }
+    .grey  { color: #707b81; }
+
+    /* Fonts. */
+    @font-face {
+
+        font-family: Bukyvede;
+        src: url(../fonts/BukyVede-Regular.ttf) format('truetype'),
+            url(../fonts/BukyVede-Italic.ttf) format('truetype'),
+            url(../fonts/BukyVede-Bold.ttf) format('truetype'),
+            url(../fonts/BukyVede-Light.ttf) format('truetype');
+
+    }
+
+/* Logo header, footer. */
+    header img, 
+    footer img { 
+        height: 100px;
+    }
+
+    .wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+/* Header positioning and menu. */
+    header {
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+
+        background-color: #fff;
+        opacity: .98;
+
+        font-family: Bukyvede;
+        font-size: 24px;
+        font-weight: 600;
+        color: #201b21;
+
+        -webkit-box-shadow: 0px 3px 2px -3px rgba(33,33,33,33.75);
+        -moz-box-shadow: 0px 3px 2px -3px rgba(33,33,33,33.75);
+        box-shadow: 0px 3px 2px -3px rgba(33,33,33,33.75);
+
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    header nav li a {
+        color: #616161;
+        margin: 0 5px;
+        padding: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        opacity: .8;
+    }
+
+    header nav li a.active {
+        color: #74241d;
+        text-decoration: underline;
+    }
+
+/* Main styles and positioning. */
+
+    h1 {
+        font-family: Bukyvede;
+        font-size: 46px;
+        font-weight: 600;
+
+        color: #201b21;
+    }
+
+    h1 > strong {
+        color: #74241d;
+    }
+
+    main {
+        padding-top: 230px;
+
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    main section:not(:last-child) > article {
+        border-bottom: 2px solid #f1f2f3;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
+    
+    section > article {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    figure {
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+    
+    figcaption {
+       font-family: 'Roboto Slab', serif;
+       line-height: 1.6;
+       color: #333;
+    }
+
+    .intro figcaption,
+    .services figcaption {
+       order: 1;
+       margin-left: 40px;
+    }
+
+    .about figcaption {
+        order: -1;
+       margin-right: 40px;
+        
+    }
+
+/* Footer. */
+    footer {
+        margin-top: 200px;
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        font-size: 16px;
+        height: 100px;
+        background-color: #333333;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+
+    img.grandpa {
+        position: absolute;
+        top: -160px;
+        height: 160px;
+    }
+/* Social icons. */
+    .fa {
+        padding: 10px;
+        font-size: 15px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+    }
+    .fa:hover { opacity: 0.7; }
+
+    .fa-odnoklassniki { background: #ed812b; }
+    .fa-facebook { background: #3B5998; }
+    .fa-twitter { background: #55ACEE; }
+    .fa-vk { background: #45668e; }
