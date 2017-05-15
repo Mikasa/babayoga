@@ -1,2 +1,2 @@
 # babayoga
-WP Theme for Baya Yoga website
+WordPress theme for Baba Yoga website
